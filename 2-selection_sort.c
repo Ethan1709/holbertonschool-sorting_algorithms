@@ -3,17 +3,17 @@
 #include "sort.h"
 
 /**
- * selection_sort - function that sorts an array of integers in ascending order 
- * @array: tt 
- * @size: size
- * Return: array
+ * selection_sort - function that sorts an array of int in ascending order
+ * @array: array to sort
+ * @size: size of array
+ * Return: void
  */
 
 void selection_sort(int *array, size_t size)
 {
 	int tmp = 0;
 	size_t tmpi;
-	size_t i = 0; 
+	size_t i = 0;
 	size_t j = 0;
 
 	for (i = 0; i < size; i++)
