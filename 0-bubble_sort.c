@@ -1,6 +1,6 @@
 #include "sort.h"
 
-void bubble_sort(const int *array, size_t size)
+void bubble_sort(int *array, size_t size)
 {
 	int temp = 0;
 	size_t j, i = 0;
