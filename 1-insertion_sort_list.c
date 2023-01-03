@@ -65,7 +65,9 @@ void end(listint_t **list, listint_t *temp, listint_t *temp3)
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *temp, *temp2, *temp3;
-
+	
+	if (!list)
+		return;
 	temp2 = (*list)->next;
 	while (temp2 != NULL)
 	{
