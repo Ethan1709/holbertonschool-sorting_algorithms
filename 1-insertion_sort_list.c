@@ -4,7 +4,6 @@
  * first - swap with the first node of the list
  * @list: the list of nodes
  * @temp: pointer on the list
- * @temp3: pointer on the list
  *
  * Return: void
  */
