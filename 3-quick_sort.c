@@ -1,21 +1,6 @@
 #include "sort.h"
 
 /**
- * quick_sort - function that sorts an array of integers in ascending order
- * using the Quick sort algorithm
- * @array: array of integers
- * @size: size of the array
- * Return: void
- */
-
-void quick_sort(int *array, size_t size)
-{
-	if (array == NULL)
-		return;
-	quick_sort_recursion(array, 0, size - 1, size);
-}
-
-/**
  * swap - swap values in array
  * @val1: first element to swap
  * @val2: second element to swap
@@ -81,4 +66,19 @@ void quick_sort_recursion(int *array, int low, int high, size_t size)
 		quick_sort_recursion(array, low, pivot - 1, size);
 		quick_sort_recursion(array, pivot + 1, high, size);
 	}
+}
+
+/**
+ * quick_sort - function that sorts an array of integers in ascending order
+ * using the Quick sort algorithm
+ * @array: array of integers
+ * @size: size of the array
+ * Return: void
+ */
+
+void quick_sort(int *array, size_t size)
+{
+        if (array == NULL)
+                return;
+        quick_sort_recursion(array, 0, size - 1, size);
 }
