@@ -19,7 +19,7 @@ void first(listint_t **list, listint_t *temp)
 }
 
 /**
-* mid - swap nodes in the midle of the list
+* mid - swap nodes in the middle of the list
 * @list: the list of nodes
 * @temp: pointer on the list
 * @temp3: pointer on the list
